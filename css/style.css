@@ -1,0 +1,106 @@
+body {
+    background-color: #161822;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    justify-content: center;
+}
+
+#main {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    width: 600px;
+    height: 500px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+
+form {
+    margin-top: 25px;
+    width: 250px;
+}
+
+form input {
+    margin: 5px;
+
+}
+
+div h2 {
+    justify-self: flex-start;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+select {
+    width: 240px;
+    margin-top: 6px;
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border-width: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+form input {
+    border-radius: 8px;
+    background-color: black;
+    border-width: 0px;
+    font-size: 1rem;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+form select {
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: black;
+    padding: 15px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#datos{
+    background-image: linear-gradient(-20deg, #21d4fd  0%, #b721ff  100%);
+    padding: 20px;
+    border-radius: 10px;
+}

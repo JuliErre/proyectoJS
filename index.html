@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al programa</h1>
+    </header>
+
+    <div id="main">
+        <h2>Calculadora de cuotas</h2>
+        <form action="" id="form">
+            <input type="number" placeholder="Ingresa el precio" id="precio" name="precio">
+            <input type="text" placeholder="Ingresa el banco" id="banco" name="banco">
+            <select name="cuotas" id="cuotas" >
+                <option value="1">1 cuotas</option>
+                <option value="3">3 cuotas</option>
+                <option value="6">6 cuotas</option>
+                <option value="12">12 cuotas</option>
+                <option value="18">18 cuotas</option>
+
+            </select>
+            <select name="tarjeta" id="tarjeta" >
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+                <option value="american">American</option>
+
+            </select>
+            <input type="submit" value="Calcular cuotas" class="btn-grad" > 
+
+        </form>
+
+        <div id="datos">
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
