@@ -60,12 +60,8 @@ cuotas.push(new cuota(18, "nacion", "mastercard", 5000, 0.4));
 
 const cuotas = []
 
-form = document.getElementById("form")
-form.addEventListener("submit", validar);
-info = document.getElementById("datos");
 
-
-function validar(e) {
+$("#form").submit(function validar(e){
     e.preventDefault();
     let formValues = new FormData(e.target);
 
@@ -79,16 +75,16 @@ function validar(e) {
         
     cuotas.push(new cuota(formValues.get("cuotas"), formValues.get("banco"), formValues.get("tarjeta"),parseInt(formValues.get("precio")) , intereses));
     
-    form.style.display="none";
-    form.style.visibility="hidden";
+    $("#form").hide();
 
-    info.innerHTML = ' <p> El banco es ' + cuotas[0].banco + '</p>' +
+    $("#datos").append (' <p> El banco es ' + cuotas[0].banco + '</p>' +
         '<p> Cantidad de cuotas: ' + cuotas[0].numero + '</p>' +
         '<p> La tarjeta es: ' + cuotas[0].tarjeta + '</p>' +
         '<p> El precio final de cada cuota es de $' + Math.round(cuotas[0].precioFinal*100)/100  + '</p>' +
-        '<p> Los interes por son de $' + Math.round (cuotas[0].intereses*100)/100 + '</p> ';
-        
-}
+        '<p> Los interes por son de $' + Math.round (cuotas[0].intereses*100)/100 + '</p> ');
+    
+    $("#datos").show();
+});
 
 
 
